@@ -1,0 +1,12 @@
+{
+    "models" : [
+        {"model_path" : "<path_to_ckpt>",
+            "image_encoder" : "efficientnet_b0",
+            "text_encoder" : "distilbert",
+            "add_projection" : true,
+            "embed_dim" : 768},
+        {"model_path" : "<path_to_another_ckpt>",
+            "image_encoder" : "clip",
+            "text_encoder" : "clip"}
+    ]
+}
