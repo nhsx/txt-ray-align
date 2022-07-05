@@ -34,7 +34,7 @@ When training on GPU machines, the appropriate PyTorch bundle should be installe
 
 Note the additonal required install in the requirements which can be performed with:
 ```
-pip install 'git+https://github.com/openai/CLIP.git'
+pip install git+https://github.com/openai/CLIP.git
 ```
 #### GPU Support
 
