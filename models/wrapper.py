@@ -219,13 +219,22 @@ class CLIPWrapper(pl.LightningModule):
 
     def validation_step(self, val_batch, idx):
         image, text = val_batch
+        # ims removed  
         image_logits, text_logits = self.forward(image, text)
         ground_truth = torch.arange(len(image_logits)).long().to(image_logits.device)
         loss = (
             F.cross_entropy(image_logits, ground_truth)
             + F.cross_entropy(text_logits, ground_truth)
         ).div(2)
-        self.log("val_loss", loss)
+        acc_i = (torch.argmax(image_logits, 1) == ground_truth).sum()
+        acc_t = (torch.argmax(image_logits, 0) == ground_truth).sum()
+        self.log_dict(
+            {
+                "val_loss": loss, 
+                "val_acc" : (acc_i + acc_t) / 2 / len(image),
+                },
+                prog_bar=True,
+            )
 
     def configure_optimizers(self):
         lr = {
