@@ -2,11 +2,14 @@
 ## NHSX Analytics Unit - PhD Internship Project
 
 ### About the project
-[[Model card]](model_card.md) [[Report]](/report)
+
+[![status: experimental](https://github.com/GIScience/badges/raw/master/status/experimental.svg)](https://github.com/GIScience/badges#experimental)
+
+[[Model card]](model_card.md) [[Project Reports]](/report)
 
 TxtRayAlign holds code to contrastively train and align text and image encoders and evaluate them on an image-to-text retrieval task using [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.0.0/). This model is not suitable to generate clinically accurate reports in a production environment.
 
-This work has been conducted as part of the NHSX Analytics Unit PhD internship project "Automated Text Descriptions from Imaging" undertaken by Dekai Zhang. This repository was mirrored and modified from: https://github.com/Zasder3/train-CLIP
+This work has been conducted as part of the NHSX Analytics Unit PhD internship project "Automated Text Descriptions from Imaging" undertaken by Dekai Zhang and Sarah Hickman. This repository was mirrored and modified from: https://github.com/Zasder3/train-CLIP
 
 Further information on the project can be found on the [project page](https://nhsx.github.io/nhsx-internship-projects/text-description-imaging/).
  
