@@ -1,17 +1,20 @@
 # TxtRayAlign: Automated Text Descriptions from Chest Radiographs
-## NHSX Analytics Unit - PhD Internship Project
+## NHS Transformation Directorate Analytics Unit - PhD Internship Project
 
 ### About the project
 
 [![status: experimental](https://github.com/GIScience/badges/raw/master/status/experimental.svg)](https://github.com/GIScience/badges#experimental)
 
-[[Model card]](model_card.md) [[Project Reports]](/report)
+- [[Model card]](model_card.md) 
+- [[Project Reports]](/report)
 
-TxtRayAlign holds code to contrastively train and align text and image encoders and evaluate them on an image-to-text retrieval task using [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.0.0/). This model is not suitable to generate clinically accurate reports in a production environment.
+TxtRayAlign holds code to contrastively train and align text and image encoders and evaluate them on an image-to-text retrieval task using [MIMIC-CXR](https://physionet.org/content/mimic-cxr/2.0.0/). 
 
-This work has been conducted as part of the NHSX Analytics Unit PhD internship project "Automated Text Descriptions from Imaging" undertaken by Dekai Zhang and Sarah Hickman. This repository was mirrored and modified from: https://github.com/Zasder3/train-CLIP
+**This model is not suitable to generate clinically accurate reports in a production environment - please see the [Model card](model_card.md) for more details.**
 
-Further information on the project can be found on the [project page](https://nhsx.github.io/nhsx-internship-projects/text-description-imaging/).
+This work has been conducted as part of the NHS Transformation Directorate Analytics Unit PhD internship project `Automated Text Descriptions from Imaging` undertaken by [Dekai Zhang](https://github.com/dkaizhang) and [Sarah Hickman](https://github.com/SH2040).  Further information on the project can be found on the [project page](https://nhsx.github.io/nhsx-internship-projects/text-description-imaging/). 
+
+This repository was mirrored and modified from: https://github.com/Zasder3/train-CLIP
  
 __Note:__ _No data, public or private are shared in this repository._
 
@@ -43,18 +46,21 @@ pip install git+https://github.com/openai/CLIP.git
 
 
 Training with GPU is recommended. Single-GPU training has been tested with:
-- Nvidia Tesla T4
-- cuda 11.1
-- Windows Server 2019
+- `NVIDIA Tesla T4`
+- `cuda 11.1`
+- `Windows Server 2019`
 
 Multi-GPU training has been tested with:
-- 4x Nvidia Tesla T4
-- cuda 11.4
-- Ubuntu 18.04
-- DDP with NCCL backend
+- `4 x NVIDIA Tesla T4`
+- `cuda 11.4`
+- `Ubuntu 18.04`
+- `DDP with NCCL backend`
 
 ### Usage
-There are three main scripts of interest. `train_finetune.py` is for training and finetuning contrastive models. `embeddings.py` takes the trained models and calculates embeddings for text or image datasets. `evaluate.ipynb` takes the embeddings and evaluates the performance of the models on an image-to-text retrieval tasks.
+There are three main scripts of interest:
+- `train_finetune.py` is for training and finetuning contrastive models
+- `embeddings.py` takes the trained models and calculates embeddings for text or image datasets
+- `evaluate.ipynb` takes the embeddings and evaluates the performance of the models on an image-to-text retrieval tasks.
 
 
 #### To get MIMIC ready for training
