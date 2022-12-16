@@ -15,7 +15,7 @@ Outputs from this processing pipeline come in the form:
 | s12345680 | report_cont | Edema | 0     | corresp_sent     |
 | ... | ... | ... | ... | ... |
 
-where the `vals` are defined as in the original labeller.
+where the `vals` are defined as in the original labeller.  Note that each report can have multiple rows for the different `cat` lables, and in some cases the same label may appear across multiple sentences within the same report.  Resolving these things is not done as part of the pipeline and is left as a choice for the specific downstream task.
 
 **Warning:**  Applying this pipeline across the whole of MIMIC-CXR takes a significant amount of time to complete.
 
