@@ -21,6 +21,7 @@ __Note:__ _No data, public or private are shared in this repository._
 ### Project structure
 - The main code for training, generating embeddings and evaluation are in the root directory
 - Supporting scripts for pre-processing MIMIC-CXR can be found in the `data` folder
+- Scripts for processing MIMIC-CXR with the CheXpert labeller to extract sentences can be found in the `chexpert` folder - these are a required input for evaluation
 
 
 ### Preliminaries
@@ -168,7 +169,7 @@ python evaluate.py \
 	--query_type image \
 	--bank_type text
 ```
-__Note:__ The evaluation step requires sentences labelled with the CheXpert labeller. The retrieval step can be performed independently. 
+__Note:__ The evaluation step requires sentences labelled with the CheXpert labeller (see `chexpert` folder for more information). The retrieval step can be performed independently. 
 
 
 ### References
