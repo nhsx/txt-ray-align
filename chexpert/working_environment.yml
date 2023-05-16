@@ -1,0 +1,16 @@
+name: chexpert-sentences
+dependencies:
+  - networkx=1.11
+  - nltk
+  - numpy
+  - pandas
+  - pathlib2
+  - pip
+  - python=3.6.7
+  - ply
+  - tqdm
+  - pip:
+    - bioc==1.1.dev3
+    - bllipparser
+    - lxml
+    - pystanforddependencies
