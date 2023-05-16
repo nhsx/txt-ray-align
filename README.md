@@ -12,7 +12,9 @@ TxtRayAlign holds code to contrastively train and align text and image encoders 
 
 **This model is not suitable to generate clinically accurate reports in a production environment - please see the [Model card](model_card.md) for more details.**
 
-This work has been conducted as part of the NHS Transformation Directorate Analytics Unit PhD internship project `Automated Text Descriptions from Imaging` undertaken by [Dekai Zhang](https://github.com/dkaizhang) and [Sarah Hickman](https://github.com/SH2040).  Further information on the project can be found on the [project page](https://nhsx.github.io/nhsx-internship-projects/text-description-imaging/). 
+This work has been conducted as part of the NHS Transformation Directorate Analytics Unit PhD internship project `Automated Text Descriptions from Imaging` undertaken by [Dekai Zhang](https://github.com/dkaizhang) and [Sarah Hickman](https://github.com/SH2040).  Some supporting `.ipynb` notebooks for Sarah's report can be found in the `SH-notebooks-add` branch of the repo [here](https://github.com/nhsx/txt-ray-align/tree/SH-notebooks-add).
+
+Further information on the project can be found on the [project page](https://nhsx.github.io/nhsx-internship-projects/text-description-imaging/). 
 
 This repository was mirrored and modified from: https://github.com/Zasder3/train-CLIP
  
